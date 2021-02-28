@@ -1,14 +1,9 @@
-import React from 'react';
-
 const getUser = async () => {
-  const url = "https://jsonplaceholder.typicode.com/users/1";
+  const userId = Math.floor(Math.random() * 10 + 1);
+  const url = "https://jsonplaceholder.typicode.com/users/" + userId;
   const res = await fetch(url);
   const user = await res.json();
 
   return user;
-    // <div>
-    //   <h1>'usuario volviendo de la api' {user} </h1>
-    // </div>
 }
-
 export default getUser;

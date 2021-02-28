@@ -1,5 +1,5 @@
 import React from 'react';
-import Lifecycle from './Lifecycle';
+// import Lifecycle from './Lifecycle';
 import FetchCard from './FetchCard';
 
 function App() {
